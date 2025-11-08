@@ -1,0 +1,123 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #272727;
+  color: #fdfdfd;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  padding: 4%;
+}
+h1, h2 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+#produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(430px, 1fr));
+  gap: 24px; 
+}
+.item-cardapio {
+  position: relative;
+  overflow: hidden;
+  padding: 28px;
+  border-radius: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 220px;
+}
+.item-cardapio h3 {
+  font-size: 32px;
+  font-weight: 800;
+  margin: 0 0 16px 0;
+}
+.item-cardapio p {
+  font-size: 24px;
+  font-weight: 800;
+  margin: 0;
+  width: 60%; 
+}
+.card-red {
+  background-color: #fc0000;
+}
+.card-blue {
+  background-color: #4e5df9;
+}
+.btn-adicionar {
+  background-color: #fdfdfd;
+  color: #1a1a1a;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 14px;
+  font-size: 18px;
+  font-weight: 800;
+  margin-top: 24px;
+}
+.btn-adicionar:hover {
+  background-color: #e0e0e0;
+}
+
+.btn-finalizar {
+  background-color: #25D366;
+  color: #fff;
+  border: none;
+  padding: 16px;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 14px;
+  font-size: 22px;
+  font-weight: 800;
+  margin-top: 24px;
+  text-transform: uppercase;
+}
+.btn-finalizar:hover {
+  background-color: #1DAE54;
+}
+
+#carrinho-visual {
+  background-color: #1a1a1a;
+  border: none;
+  padding: 28px;
+  min-height: 100px;
+  border-radius: 28px;
+  font-size: 28px;
+  font-weight: 800;
+  text-align: center;
+}
+#carrinho-total {
+  font-size: 32px;
+  font-weight: 800;
+  display: block;
+  margin-top: 24px;
+}
+.card-imagem {
+  position: absolute;
+  pointer-events: none; 
+}
+
+.img-bacon {
+  width: 280px;
+  right: -50px;
+  bottom: -40px;
+}
+.img-batata {
+  width: 300px;
+  right: -60px;
+  bottom: -50px;
+}
+.img-refri {
+  width: 270px;
+  right: -50px;
+  bottom: -60px;
+}
+
+.card-texto {
+  width: 60%;
+  position: relative;
+  z-index: 2;
+}
